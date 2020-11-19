@@ -88,7 +88,7 @@ io.on('connection', (socket) => {
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (err)=>{
     console.log('mongo db Connected', err);
 })
-var port = process.env.port
+var port = process.env.PORT
 // App listen also add port is dynamic by deafult you can add harcoded...
 var server =   http.listen( port || 3000, () => { //use http instead of app for running app with socket.io
     console.log('Server is running on port',server.address().port)
