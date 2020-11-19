@@ -42,7 +42,7 @@
     }
 
     function getMessage(){
-        $.get('http://localhost:3000/messages', (data)=>{
+        $.get('/messages', (data)=>{
             console.log(data);
 
             //print name using forEach CallBack
@@ -57,7 +57,7 @@
 
     //Send post request from browser not from postman
     function postMessage(message){
-        $.post('http://localhost:3000/messages',message)
+        $.post('/messages',message)
     }
 
 </script>
